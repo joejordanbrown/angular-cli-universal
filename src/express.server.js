@@ -3,25 +3,11 @@ const fs = require('fs');
 const express = require('express');
 const compression = require('compression');
 const ngExpressEngine = require('@nguniversal/express-engine').ngExpressEngine;
-const probe = require('pmx').probe();
 
 require('zone.js/dist/zone-node');
 require('rxjs/add/operator/filter');
 require('rxjs/add/operator/map');
 require('rxjs/add/operator/mergeMap');
-
-var metric = probe.metric({
-  name    : 'Realtime user',
-  value   : function() {
-    return counter;
-  }
-});
-
-setInterval(function() {
-  counter++;
-}, 100);
-
-
 
 var hash;
 fs.readdirSync(__dirname).forEach(file => {
