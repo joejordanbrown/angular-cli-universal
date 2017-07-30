@@ -1,0 +1,36 @@
+:host {
+  display: block;
+  padding: 24px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.example-item {
+  display: inline-block;
+  max-width: 100%;
+  margin: 20px;
+  vertical-align: top;
+  width: 260px;
+}
+
+md-card-title {
+  font-family: Roboto, Helvetica Neue, sans-serif;
+}
+
+@media (max-width: 840px) {
+
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

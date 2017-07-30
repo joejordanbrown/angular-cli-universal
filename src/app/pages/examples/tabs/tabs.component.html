@@ -1,0 +1,13 @@
+<nav md-tab-nav-bar>
+  <a md-tab-link [routerLink]="['one']" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+    Tab One
+  </a>
+  <a md-tab-link [routerLink]="['two']" routerLinkActive #rla2="routerLinkActive" [active]="rla2.isActive">
+    Tab Two
+  </a>
+  <a md-tab-link [routerLink]="['three']" routerLinkActive #rla3="routerLinkActive" [active]="rla3.isActive">
+    Tab Three
+  </a>
+</nav>
+
+<router-outlet></router-outlet>

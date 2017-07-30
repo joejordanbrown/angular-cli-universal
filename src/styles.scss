@@ -1,0 +1,55 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+html, body {
+  margin: 0;
+}
+
+body {
+  background: #ECE9E6;
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  font-family: Roboto, Helvetica Neue, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mat-tab-links {
+  display: flex;
+}
+
+.mat-tab-link {
+  flex: 1 1 auto;
+}
+
+@media only screen and (max-width: 500px) {
+  app-route {
+    order: 0;
+    flex: 1 1 auto;
+    align-self: auto;
+    width: 100%;
+  }
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.flex-item:nth-child(1) {
+  order: 1;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.flex-item:nth-child(2) {
+  order: 0;
+  flex: 1 1 auto;
+  align-self: auto;
+}

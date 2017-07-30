@@ -1,0 +1,82 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1976d2;
+  background: linear-gradient(145deg, #0d47a1, #42a5f5);
+  height: 100vh;
+}
+
+.toolbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  padding: 14px 16px;
+  box-sizing: border-box;
+}
+
+.fill {
+ flex: 1 1 auto;
+}
+
+a {
+  color: #FFFFFF;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+  font-size: 28pt;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  font-size: 16pt;
+  font-weight: 100;
+  margin: 0;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.box-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  max-width: 100%;
+}
+
+.box-header-image {
+  width: 150px;
+  min-width: 150px;
+  .st0{
+    fill:#DD0031;
+  }
+  .st1{
+    fill:#C3002F;
+  }
+  .st2{
+    fill:#FFFFFF;
+  }
+}
+
+.box-header-text {
+  margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 18pt;
+  }
+}

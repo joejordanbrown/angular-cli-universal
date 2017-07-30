@@ -1,0 +1,46 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+  height: calc(100vh - 56px);
+}
+
+@media (max-width: 840px) {
+  :host {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    height: calc(100vh - 56px);
+  }
+  nav {
+    order: 1;
+    flex: 0 1 auto;
+    align-self: auto;
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  :host {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    height: calc(100vh - 56px);
+  }
+  nav {
+    order: 1;
+    flex: 0 1 auto;
+    align-self: auto;
+    width: 100%;
+  }
+}

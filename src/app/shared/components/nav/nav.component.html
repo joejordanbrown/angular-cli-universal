@@ -1,0 +1,15 @@
+<ul>
+  <li>
+    <a href="" [routerLink]="['/']" md-button>Home</a>
+  </li>
+  <li>
+    <a href="" [routerLink]="['/about']" md-button>About</a>
+  </li>
+  <li>
+    <a href="" [routerLink]="['/contact']" md-button>Contact</a>
+  </li>
+</ul>
+
+
+
+<md-icon class="connected" mdTooltip="No Connection" *ngIf="!(online$ | async)">signal_wifi_off</md-icon>
