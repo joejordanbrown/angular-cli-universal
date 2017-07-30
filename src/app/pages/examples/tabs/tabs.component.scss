@@ -8,6 +8,10 @@
   height: calc(100vh - 56px);
 }
 
+nav {
+  width: 100%;
+}
+
 @media (max-width: 840px) {
   :host {
     display: flex;
