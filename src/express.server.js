@@ -16,6 +16,9 @@ fs.readdirSync(__dirname).forEach(file => {
   }
 });
 
+// const mailFile = fs.readdirSync(__dirname).filter(file => file.startsWith('main'));
+// const hash = mailFile[0].split('.')[1];
+
 const AppServerModuleNgFactory = require('./main.' + hash + '.bundle').AppServerModuleNgFactory;
 
 const app = express();

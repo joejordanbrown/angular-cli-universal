@@ -7,6 +7,7 @@ import { ExampleNavComponent } from './pages/examples/nav/nav.component';
 import { ExampleTabsComponent } from './pages/examples/tabs/tabs.component';
 import { ExampleTabRouteComponent } from './pages/examples/tabs/route/route.component';
 import { ExampleHttpComponent } from './pages/examples/http/http.component';
+import { ExampleDragScrollComponent } from './pages/examples/drag-scroll/drag-scroll.component';
 
 
 
@@ -101,6 +102,17 @@ const routes: Routes = [
         data: {
           title: 'Example - Http',
           description: 'Description of the example http page',
+          meta: {
+            themeColor: '#2196F3'
+          }
+        }
+      },
+      {
+        path: 'drag-scroll',
+        component: ExampleDragScrollComponent,
+        data: {
+          title: 'Example - Drag Scroll',
+          description: 'Description of the example Drag Scroll page',
           meta: {
             themeColor: '#2196F3'
           }

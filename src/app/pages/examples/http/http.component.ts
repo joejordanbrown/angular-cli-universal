@@ -3,7 +3,7 @@ import { Response } from '@angular/http';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-http',
+  selector: 'page-example-http',
   templateUrl: './http.component.html',
   styleUrls: ['./http.component.scss']
 })
