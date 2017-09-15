@@ -3,6 +3,8 @@ const fs = require('fs');
 const express = require('express');
 const compression = require('compression');
 const ngExpressEngine = require('@nguniversal/express-engine').ngExpressEngine;
+const apicache = require('apicache');
+
 
 require('zone.js/dist/zone-node');
 require('rxjs/add/operator/filter');
@@ -22,7 +24,10 @@ fs.readdirSync(__dirname).forEach(file => {
 const AppServerModuleNgFactory = require('./main.' + hash + '.bundle').AppServerModuleNgFactory;
 
 const app = express();
+const cache = apicache.middleware;
 const port = Number(process.env.PORT || 8080);
+
+app.use(cache('60 minutes'));
 
 app.engine('html', ngExpressEngine({
   baseUrl: 'http://localhost:' + port,
