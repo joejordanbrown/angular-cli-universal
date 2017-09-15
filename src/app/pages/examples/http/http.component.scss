@@ -3,6 +3,29 @@
   padding: 24px;
 }
 
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grid-item {
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  padding: 24px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+md-expansion-panel {
+  margin-top: 100px !important;
+  md-panel-title {
+    max-width: 100px;
+  }
+}
+
+
 pre {
   width: 100%;
   max-width: 100%;

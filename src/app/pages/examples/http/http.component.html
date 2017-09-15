@@ -2,7 +2,27 @@
   Http Example
 </h1>
 
+<div class="grid">
+  <md-card class="grid-item" *ngFor="let item of api">
+    <img md-card-image [src]="item.images['237x'].url" [alt]="item.description">
+  </md-card>
+</div>
 
-<pre>
+
+
+
+<md-expansion-panel>
+  <md-expansion-panel-header>
+    <md-panel-title>
+      Show JSON
+    </md-panel-title>
+    <md-panel-description>
+      View API JSON
+    </md-panel-description>
+  </md-expansion-panel-header>
+
+  <pre>
   {{api | json}}
 </pre>
+</md-expansion-panel>
+

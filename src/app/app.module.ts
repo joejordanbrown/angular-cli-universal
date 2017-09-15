@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 import {
-  MdButtonModule, MdCardModule, MdIconModule, MdSlideToggleModule, MdTabsModule,
+  MdButtonModule, MdCardModule, MdExpansionModule, MdIconModule, MdSlideToggleModule, MdTabsModule,
   MdToolbarModule
 } from '@angular/material';
 
@@ -28,6 +28,7 @@ import { ExampleTabsComponent } from './pages/examples/tabs/tabs.component';
 import { ExampleTabRouteComponent } from './pages/examples/tabs/route/route.component';
 import { ExampleHttpComponent } from './pages/examples/http/http.component';
 import { ExampleDragScrollComponent } from './pages/examples/drag-scroll/drag-scroll.component';
+import { JsonpModule } from '@angular/http';
 
 
 
@@ -53,10 +54,12 @@ import { ExampleDragScrollComponent } from './pages/examples/drag-scroll/drag-sc
     // MetaModule.forRoot(),
     BrowserAnimationsModule,
     HttpClientModule,
+    JsonpModule,
     MdToolbarModule,
     MdCardModule,
     MdButtonModule,
     MdTabsModule,
+    MdExpansionModule,
     MdIconModule,
     MdSlideToggleModule,
     DragScrollModule
